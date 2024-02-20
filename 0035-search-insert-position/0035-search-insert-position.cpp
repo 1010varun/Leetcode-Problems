@@ -4,7 +4,7 @@ public:
         int s = 0;
         int e = nums.size()-1;
         
-        long long int mid;
+        int mid;
         
         while(s <= e) {
             mid = s + (e-s)/2;

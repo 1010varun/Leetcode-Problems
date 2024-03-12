@@ -5,7 +5,7 @@ public:
     
     long long power (long long x, long long y) {
         if(y == 0) return 1;
-        // if(y == 1) return x;
+        if(y == 1) return x;
         long long ans = power(x, y/2);
         ans *= ans;
         ans %= mod;

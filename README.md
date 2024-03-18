@@ -3,6 +3,3 @@
 ### Mostly the problems are solved in `C++` or `python`
 
 #### managed by Leethub
-
-
-

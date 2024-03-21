@@ -25,7 +25,10 @@ jobs:
         git commit -m "Automated README update"
       
     - name: Push changes
+      env:
+        TOKEN: ${{secrets.TOKEN}}
       run: |
+        git remote set-url origin https://$TOKEN@github.com/1010varun/Leetcode-Problems
         git push
 
 

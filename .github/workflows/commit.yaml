@@ -2,7 +2,7 @@ name: Daily Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs at midnight UTC every day
+    - cron: '30 18 * * *'  # Runs at midnight UTC every day
 
 jobs:
   build:

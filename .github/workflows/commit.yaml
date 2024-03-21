@@ -22,12 +22,11 @@ jobs:
         git config --local user.name "GitHub Action"
         git add README.md
         git commit -m "Automated README update"
-        git remote set-url origin https://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@github.com/1010varun/Leetcode-Problems
       
     - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.TOKEN }}
+      run: |
+        git remote set-url origin https://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@github.com/1010varun/Leetcode-Problems
+        git push
 
 
         

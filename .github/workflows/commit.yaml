@@ -3,7 +3,7 @@ name: Daily Update README
 on: 
   workflow_dispatch: 
   schedule:
-    - cron: '31 18 * * *'  # Runs at midnight UTC every day
+    - cron: '30 18 * * *'  # Runs at midnight UTC every day
 
 jobs:
   build:
@@ -25,9 +25,9 @@ jobs:
         git commit -m "Automated README update"
       
     - name: Push changes
-      run: |
-        git remote set-url origin https://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@github.com/1010varun/Leetcode-Problems
-        git push
+      uses: ad-actions/github-push@v4  # Push the changes to your repo
+      with:
+          github_token: ${{ secrets.TOKEN }}
 
 
         

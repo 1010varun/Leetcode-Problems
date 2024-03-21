@@ -25,9 +25,8 @@ jobs:
         git commit -m "Automated README update"
       
     - name: Push changes
-      uses: ad-actions/github-push@v4  # Push the changes to your repo
-      with:
-          github_token: ${{ secrets.TOKEN }}
+      run: |
+        git push
 
 
         

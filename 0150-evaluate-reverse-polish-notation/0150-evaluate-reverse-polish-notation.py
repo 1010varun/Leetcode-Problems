@@ -5,7 +5,6 @@ class Solution:
         stack = []
         top = -1
         for i in tokens :
-            # print(stack)
             if(i != "+" and i != "-" and i != "/" and i != "*") :
                 stack.append(i)
                 top += 1
@@ -35,5 +34,4 @@ class Solution:
                         res = op1 // op2
                 stack.append(res)
                 top -= 1
-        # print(stack)
         return stack.pop()
